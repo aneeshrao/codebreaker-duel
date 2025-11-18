@@ -1,0 +1,24 @@
+{
+  "name": "number-guessing-game",
+  "version": "1.0.0",
+  "description": "Real-time two-player number guessing game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "websocket",
+    "game",
+    "multiplayer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
