@@ -169,7 +169,7 @@ socket.on('sessionJoined', (data) => {
 
 socket.on('playerJoined', (data) => {
     if (data.playerCount === 2) {
-        elements.playerStatus.innerHTML = '<p>✓ Both players connected! Choose your secret number.</p>';
+        elements.playerStatus.innerHTML = '<p>✅ Both players connected! Choose your secret number.</p>';
         showScreen('numberSelection');
     }
 });
@@ -260,12 +260,12 @@ function addGuessToHistory(guessData) {
     
     guessItem.innerHTML = `
         <div class="guess-info">
-            <div class="guess-player">${isYourGuess ? 'You' : 'Opponent'}</div>
+            <div class="guess-player">${isYourGuess ? '👤 You' : '🤖 Opponent'}</div>
             <div class="guess-number">${formatNumber(guessData.guess)}</div>
         </div>
         <div class="guess-result">
             <span class="result-badge badge-digits">✓ ${guessData.correctDigits} digits</span>
-            <span class="result-badge badge-positions">📍 ${guessData.correctPositions} positions</span>
+            <span class="result-badge badge-positions">🎯 ${guessData.correctPositions} exact</span>
         </div>
     `;
     

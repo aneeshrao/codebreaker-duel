@@ -9,15 +9,15 @@
 <body>
     <div class="container">
         <header>
-            <h1>🎯 Number Guessing Game</h1>
-            <p class="subtitle">Two-player real-time challenge</p>
+            <h1>🎯 CodeBreaker Duel</h1>
+            <p class="subtitle">⚡ Real-Time Two-Player Challenge ⚡</p>
         </header>
 
         <!-- Session Setup Screen -->
         <div id="setupScreen" class="screen active">
             <div class="card">
-                <h2>Start a New Game</h2>
-                <button id="createSessionBtn" class="btn btn-primary">Create New Session</button>
+                <h2>🚀 Start a New Game</h2>
+                <button id="createSessionBtn" class="btn btn-primary">✨ Create New Session</button>
                 
                 <div class="divider">
                     <span>OR</span>
@@ -25,7 +25,7 @@
                 
                 <div class="join-form">
                     <input type="text" id="sessionCodeInput" placeholder="Enter session code" maxlength="6">
-                    <button id="joinSessionBtn" class="btn btn-secondary">Join Session</button>
+                    <button id="joinSessionBtn" class="btn btn-secondary">🎮 Join Session</button>
                 </div>
             </div>
         </div>
@@ -33,16 +33,16 @@
         <!-- Waiting Room Screen -->
         <div id="waitingScreen" class="screen">
             <div class="card">
-                <h2>Session Created!</h2>
+                <h2>🎊 Session Created!</h2>
                 <div class="session-code-display">
-                    <label>Share this code with your friend:</label>
+                    <label>📤 Share this code with your friend:</label>
                     <div class="code-box">
                         <span id="displaySessionCode"></span>
                         <button id="copyCodeBtn" class="btn-icon" title="Copy code">📋</button>
                     </div>
                 </div>
                 <div id="playerStatus" class="player-status">
-                    <p>Waiting for another player to join...</p>
+                    <p>⏳ Waiting for another player to join...</p>
                 </div>
             </div>
         </div>
@@ -50,18 +50,18 @@
         <!-- Number Selection Screen -->
         <div id="numberSelectionScreen" class="screen">
             <div class="card">
-                <h2>Choose Your Secret Number</h2>
-                <p class="instruction">Enter a 4-digit number with unique digits (e.g., 1234, 5678)</p>
+                <h2>🔐 Choose Your Secret Number</h2>
+                <p class="instruction">🎲 Enter a 4-digit number with unique digits (e.g., 1234, 5678, 9876)</p>
                 
                 <div class="number-input-container">
                     <input type="text" id="secretNumberInput" class="number-input" placeholder="_ _ _ _" maxlength="4">
                 </div>
                 
-                <button id="lockNumberBtn" class="btn btn-primary" disabled>Lock Number</button>
+                <button id="lockNumberBtn" class="btn btn-primary" disabled>🔒 Lock Number</button>
                 
                 <div id="waitingForOpponent" class="waiting-message" style="display: none;">
                     <div class="spinner"></div>
-                    <p>Waiting for opponent to choose their number...</p>
+                    <p>⏳ Waiting for opponent to choose their number...</p>
                 </div>
             </div>
         </div>
@@ -70,11 +70,11 @@
         <div id="gameScreen" class="screen">
             <div class="game-info">
                 <div class="info-card">
-                    <span class="label">Session Code:</span>
+                    <span class="label">🎯 Session</span>
                     <span id="gameSessionCode" class="value"></span>
                 </div>
                 <div class="info-card" id="turnIndicator">
-                    <span class="label">Turn:</span>
+                    <span class="label">⚡ Turn</span>
                     <span id="currentTurnDisplay" class="value"></span>
                 </div>
             </div>
@@ -82,19 +82,19 @@
             <div class="game-layout">
                 <!-- Guess Input -->
                 <div class="card guess-panel">
-                    <h3>Make Your Guess</h3>
+                    <h3>🎯 Make Your Guess</h3>
                     <div class="guess-input-container">
                         <input type="text" id="guessInput" class="number-input" placeholder="_ _ _ _" maxlength="4">
-                        <button id="submitGuessBtn" class="btn btn-primary">Submit Guess</button>
+                        <button id="submitGuessBtn" class="btn btn-primary">🚀 Submit</button>
                     </div>
-                    <p class="hint">Guess your opponent's 4-digit number</p>
+                    <p class="hint">💡 Guess your opponent's 4-digit number</p>
                 </div>
 
                 <!-- Guess History -->
                 <div class="card history-panel">
-                    <h3>Guess History</h3>
+                    <h3>📊 Guess History</h3>
                     <div id="guessHistory" class="guess-history">
-                        <p class="empty-state">No guesses yet. Make your first guess!</p>
+                        <p class="empty-state">🎲 No guesses yet. Make your first guess!</p>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@
             <div class="card game-over-card">
                 <div id="winnerMessage" class="winner-message"></div>
                 <div id="revealNumbers" class="reveal-numbers"></div>
-                <button id="newGameBtn" class="btn btn-primary">Start New Game</button>
+                <button id="newGameBtn" class="btn btn-primary">🔄 Start New Game</button>
             </div>
         </div>
 
