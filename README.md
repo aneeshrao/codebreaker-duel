@@ -62,36 +62,6 @@ ai-coding-challenge/
 - Responsive design: Works on desktop and mobile
 - User-friendly: Clear visual feedback and intuitive flow
 
-## Deployment
-
-### Deploy to Render
-
-1. Create a new Web Service on Render.com
-2. Connect your GitHub repository
-3. Configure:
-   - Build Command: `npm install`
-   - Start Command: `npm start`
-4. Deploy
-
-### Deploy to Railway
-
-1. Create a new project on Railway.app
-2. Deploy from GitHub
-3. Railway will automatically detect and deploy your Node.js app
-
-### Deploy to Heroku
-
-```bash
-heroku login
-heroku create your-game-name
-git push heroku main
-heroku open
-```
-
-### Environment Variables
-
-The app uses `PORT` from environment variables, defaulting to 3000. Hosting platforms automatically set the PORT variable.
-
 ## Features
 
 - Session Management: Create and join games with unique codes
